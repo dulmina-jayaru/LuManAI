@@ -1,6 +1,7 @@
 import streamlit as st
 from gradio_client import Client
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",page_title="TTS By LuManAI")
+
 
 def text_to_speech(text,op):
     client = Client("https://suno-bark.hf.space/")
